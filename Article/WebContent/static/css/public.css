@@ -1,0 +1,134 @@
+@charset "utf-8";
+* {
+	padding: 0 ;
+	margin: 0 ;
+}
+
+body {
+	font-family: 微软雅黑 ;
+}
+
+ul li {
+	list-style: none ;
+}
+
+a {
+	color: #fff ;
+	text-decoration: none ;
+	font-family: 微软雅黑 ;
+}
+
+
+.header {
+	height: 72px ;
+	font-family: 微软雅黑 ;
+	background: url(http://chuantu.biz/t5/126/1499235049x3396406132.jpg);
+}
+
+.header .logo {
+	color: black ;
+	line-height: 72px ;
+	font-size: 30px ;
+	margin-left: 20px ;
+	display: inline-block ;
+	font-weight: 500 ;
+	float: left ; 
+}
+.header ul li a {
+	color: black;
+}
+
+.header ul li.first {
+	margin-left: 30px ;
+	background:#74b0e2 ;
+}
+
+
+.header ul li {
+	float: left ;
+	color: black ;
+	display: inline-block ;
+	width: 112px ;
+	height: 72px ; 
+	text-align: center ;
+	line-height:72px ;
+	cursor: pointer ;
+}
+
+.header ul li:hover {
+	background: #ccc;
+}
+
+.header .login {
+	float: right ; 
+	color: #3c3c3c;
+	line-height: 72px;
+	margin-right: 40px;
+}
+.header .login a {
+	color: #3c3c3c;
+	font-size: 20px;
+}
+/*通用样式*/
+/*ͨ通用css样式*/
+
+.fl {float: left;}
+.fr {float: right;}
+
+.h20 {height: 20px}
+.h22 {height: 22px}
+.h24 {height: 24px}
+.h26 {height: 26px}
+.h28 {height: 28px}
+.h30 {height: 30px}
+.h60 {height: 60px}
+.h200 {height: 200px}
+.h300 {height: 300px}
+.h600 {height: 600px}
+.h800 {height: 800px}
+
+.w20 {width: 20px}
+.w22 {width: 22px}
+.w24 {width: 24px}
+.w26 {width: 26px}
+.w28 {width: 28px}
+.w30 {width: 30px}
+.w60 {width: 60px}
+.w200 {width: 200px}
+.w300 {width: 300px}
+.w600 {width: 600px}
+.w800 {width: 800px}
+
+.mt10 {margin-top: 10px}
+.mt16 {margin-top: 16px}
+.mt20 {margin-top: 20px}
+.mt32 {margin-top: 32px}
+.mt50 {margin-top: 50px}
+.mt64 {margin-top: 64px}
+.mt80 {margin-top: 80px}
+
+.ml10 {margin-left: 10px}
+.ml16 {margin-left: 16px}
+.ml20 {margin-left: 20px}
+.ml32 {margin-left: 32px}
+.ml64 {margin-left: 64px}
+
+.mr10 {margin-right: 10px}
+.mr16 {margin-right: 16px}
+.mr32 {margin-right: 32px}
+.mr64 {margin-right: 64px}
+
+.mb10 {margin-bottom: 10px}
+.mb16 {margin-bottom: 16px}
+.mb32 {margin-bottom: 32px}
+.mb64 {margin-bottom: 64px}
+
+.font14 {font-size: 14px}
+.font16 {font-size: 16px}
+.font18 {font-size: 18px}
+.font20 {font-size: 20px}
+.font22 {font-size: 22px}
+.font24 {font-size: 24px}
+.font26 {font-size: 26px}
+
+

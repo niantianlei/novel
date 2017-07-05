@@ -1,0 +1,151 @@
+
+
+.category {
+	margin-top: 10px;
+	margin-bottom:20px;
+}
+	
+.category .title {
+	clear: both;
+	margin-bottom: 10px;
+    border-bottom: 1px solid #cac5c5;
+    height: 30px;
+	text-indent:1em;
+	font-size:18px;
+	color:#666;
+}
+.category .items {
+	margin-left:10px;
+}
+.category .items .item {
+    width: 230px;
+    height: 320px;
+    background: #ccc;
+    margin: 20px;
+    float: left;
+    margin-right:20px;
+    cursor:pointer;
+    transition:all 0.2s ease;
+}
+
+.category .items .item:hover {
+	transform:scale(1.05);
+}
+
+.category .items .item div {
+	text-align:center;
+}
+
+.item-banner {
+	background: #666;
+    color: #FFF;
+    height: 250px;
+}
+
+.item-header {
+	font-size: 12px;
+    line-height: 52px;
+}
+
+.item-name {
+    font-size: 22px;
+    line-height: 74px;
+       white-space:nowrap;
+       overflow:hidden;
+       text-overflow: ellipsis;	
+}
+
+.item-author {
+    font-size: 14px;
+    text-indent: 7em;
+    padding-bottom: 70px;
+}
+
+.item-description {
+	background: #eee;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.img{
+	clear: both;
+	width: 1000px;
+	height: 280px;
+	margin: 10px auto;
+}
+.content {
+    position: relative;
+    float: left;
+    width: 1000px;
+    height: 280px;
+    overflow: hidden;
+}
+.imgBox {
+    position: absolute;
+    clear: both;
+    width: 5000px;
+    list-style-type: none;
+}
+.imgBox > li {
+     float: left;
+     width: 1000px;
+}
+.imgBox a {
+    display: inline-block;
+}
+.control{
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 10px;
+    background: #000;
+    opacity: .3;
+    font-size: 30px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+.control:hover {
+    opacity: .8;
+}
+.to-right {
+    left: 960px;
+}
+.currentNum {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-left: -33px;
+    width: 66px;
+    height: 10px;
+    overflow: hidden;
+}
+.imgNum {
+    display: inline-block;
+    float: left;
+    width: 9px;
+    height: 9px;
+    margin-right: 4px;
+    border-radius: 5px;
+    background: #b7b7b7;
+    cursor: pointer;
+}
+.mark-color{
+    background: #f40;
+}
+
+.main {
+	border:1px solid #ccc;
+	margin-left: 6%;
+	margin-right: 6%;
+}
+.tag {
+	margin:20px; font-size: 16px; 
+}
+

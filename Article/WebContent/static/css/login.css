@@ -1,0 +1,69 @@
+body {
+	background:#a1dbd1;
+	overflow:hidden;
+	opacity: 0.8;
+}
+.content {
+	width: 368px;
+    height: 396px;
+    margin: 60px auto;
+    background: #41cbd8;
+    opacity: 0.9;
+    border-radius: 10px;
+}
+
+.content .logo {
+	text-align: center;
+	line-height: 90px; 
+	color: #fff;
+	font-size:30px;
+	position: relative;
+   	top: 26px;
+}
+
+
+.content .inputBox {
+	height: 30px;
+   	opacity: 0.6;
+}
+.content .inputBox input{
+	width: 280px;
+    height: 50px;
+    padding-left: 16px;
+    line-height: 38px;
+    font-size: 22px;
+    background: #e2e9f9;
+    color: #464242;
+    border: none;
+    border-radius: 2px;
+}
+
+.content .login_btn{
+    width: 88%;
+    height: 46px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 微软雅黑;
+    background: #458fce;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.content .login_btn:hover {
+	 background: #3499da;
+}
+
+
+/*展示信息*/
+.show {
+	width:600px;
+	height:400px;
+	position:absolute;
+	left:100px;
+	top:60px;
+}
+
+
+
