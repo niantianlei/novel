@@ -263,7 +263,7 @@ DataBaseUtils.config("jdbc.properties");
 Map map = DataBaseUtils.queryForMap("select * from t_user where username = ?","李四");
 System.out.println(map);
 ```
-对了我刚刚添加的username是李四，也可以搜索张三。  
+**对了我刚刚添加的username是李四，也可以搜索张三。**  
 
 ## 从controller层到service层  
 首先判断用户名和密码是否为空，如果为空，就直接返回一个错误码-1，接下来依次判断用户名是否存在，以及用户名密码是否都正确。只要有一个不符合，就直接返回对应的错误码。然后，如果账号密码都正确，那么就返回一个1，表示登录成功，同时，把user对象和用户名放到session中。session的话，就是浏览器作用域。  
@@ -271,6 +271,8 @@ System.out.println(map);
 **测试**  
 <img src="/Article/git-img/none.png"/>  
 <img src="/Article/git-img/password-error.png"/>  
+
+
 密码：123456，用户名：李四
 <img src="/Article/git-img/success.png"/>  
 
