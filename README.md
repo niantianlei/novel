@@ -18,7 +18,7 @@
 
 用eclipse 新建名为Article的 Dynamic Web Project，直接Finish。
 
-<img src="/Article/git-img/article.png"/>
+<img src="/git-img/article.png"/>
 
 | 文件名 | 作用 |
 | --- | --- |
@@ -38,7 +38,7 @@
 
 ### 新建web.xml
 在WEB-INF目录下新建一个web.xml    
-<img src="/Article/git-img/web.png"/>
+<img src="/git-img/web.png"/>
 
 web.xml对web项目进行基本的配置。然后编写web.xml  
 ```
@@ -54,7 +54,7 @@ web.xml对web项目进行基本的配置。然后编写web.xml
 ```
 ### 新建index.jsp  
 在WebContent目录下新建一个index.jsp  
-<img src="/Article/git-img/index.png"/>  
+<img src="/git-img/index.png"/>  
 编写index.jsp  
 ```
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -75,7 +75,7 @@ web.xml对web项目进行基本的配置。然后编写web.xml
 1.百度下载tomcat，配置好环境变量。（百度均可解决）  
 2.打开eclipse，依次点击window-Preferences-Server-Runtime Environment。  
 3.add一个tomcat版本，我下载的是8.5.就点这个，选择目录，即可。  
-<img src="/Article/git-img/tomcat.png"/>    
+<img src="/git-img/tomcat.png"/>    
 运行。  
 然后在浏览器地址栏输入*http://localhost:8080/Article/*  
 网页输出“项目搭成。”
@@ -106,7 +106,7 @@ request.setAttribute("basePath", basePath) 表示将得到的basePath（项目�
 
 ### 简化
 还有就是代码会有很多重复的地方，如顶部导航，写登录界面的时候也会用到。这样我把这些公共代码分离出来。放在common里面。    
-<img src="/Article/git-img/common.png"/>  
+<img src="/git-img/common.png"/>  
 这样，登录页面直接引入header.jsp，就少写了很多代码。  
 taglib.jsp存放前面获取根路径的代码。  
 
@@ -182,12 +182,12 @@ $.ajax({
 	
 %>
 ```
-<img src="/Article/git-img/controller.png"/>
+<img src="/git-img/controller.png"/>
 
 ### 利用javaBean得到数据库表  
 就是将javaBean转换成建表语句。  
 运行TestMain.java,可以得到如下输出  
-<img src="/Article/git-img/sql.png"/>   
+<img src="/git-img/sql.png"/>   
 复制这些语句，登录数据库输入密码，新建database(create database article;)，use article使用此database  
 再粘帖刚刚复制到的语句加;  
 建好数据库。  
@@ -216,7 +216,7 @@ try {
 	e.printStackTrace();
 }
 ```
-<img src="/Article/git-img/Properties.png"/>
+<img src="/git-img/Properties.png"/>
 
 ## 封装各种操作方法  
 创建DataBaseUtils类，里面编写了各种操作数据库的方法。  
@@ -227,7 +227,7 @@ Connection conn = DataBaseUtils.getConnection();
 System.out.println(conn);
 ```
 输出：  
-<img src="/Article/git-img/test1.png"/>  
+<img src="/git-img/test1.png"/>  
 说明成功获取了连接。 
 
 
@@ -239,7 +239,7 @@ update("INSERT INTO t_user(id,username,password,sex,create_time,is_delete,addres
         + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)", id,"李四",123456,0,createTime,0,"保密4","保密4");
 ```
 这时，查看表结构，并查询表里是否存在数据。  
-<img src="/Article/git-img/test2.png"/>  
+<img src="/git-img/test2.png"/>  
 添加成功。  
 
 
@@ -266,12 +266,12 @@ System.out.println(map);
 首先判断用户名和密码是否为空，如果为空，就直接返回一个错误码-1，接下来依次判断用户名是否存在，以及用户名密码是否都正确。只要有一个不符合，就直接返回对应的错误码。然后，如果账号密码都正确，那么就返回一个1，表示登录成功，同时，把user对象和用户名放到session中。session的话，就是浏览器作用域。  
 创建LoginService.java    
 **测试**  
-<img src="/Article/git-img/none.png"/>  
-<img src="/Article/git-img/password-error.png"/>  
+<img src="/git-img/none.png"/>  
+<img src="/git-img/password-error.png"/>  
 
 
 密码：123456，用户名：李四
-<img src="/Article/git-img/success.png"/>  
+<img src="/git-img/success.png"/>  
 
 ## 页面更新  
 最后更改登录成功后，**登录|注册**字样应该被换掉。  
@@ -281,7 +281,7 @@ System.out.println(map);
 <%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 ```
 此时显示：  
-<img src="/Article/git-img/modification.png"/>  
+<img src="/git-img/modification.png"/>  
 ## 登出  
 在controller文件夹新建一个logoutController.jsp。删除session中的username并转到登录页面   
 ```
