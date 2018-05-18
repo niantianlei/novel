@@ -70,7 +70,7 @@ web.xml对web项目进行基本的配置。然后编写web.xml
 </body>
 </html>
 ```
-
+ 
 ### 将项目部署到tomcat  
 1.百度下载tomcat，配置好环境变量。（百度均可解决）  
 2.打开eclipse，依次点击window-Preferences-Server-Runtime Environment。  
